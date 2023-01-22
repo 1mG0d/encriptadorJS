@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>
+            Encriptador by Luis Sandoval
+        </title>
+        <link rel="style.css">
+        <link rel="reset.css">
+    </head>
+    <body>
+        <header>
+
+        </header>
+        <main>
+            <label for="mensajeEncriptar">Ingrese Mensaje a Encriptar</label>
+            <textarea  id="mensajeEncriptar" cols="70" rows="10" class="input-padron"></textarea required>
+                <label for="mensajeEncriptado">Mensaje Encriptad0</label>
+            <textarea  id="mensajeEncriptado" cols="70" rows="10" class="input-padron"></textarea required>
+                <button  onclick="presionado1()" >LA CAGADA</button>
+                <button  onclick="presionado()" >LA CAGADA DESENCRIPTADA</button>
+            <script>
+                var activo= false;
+                var algo="";
+                mensajeEncriptado="entradaMensaje";
+                function presionado1(){
+                    activo=true;
+                    if (activo) {
+                         algo=document.getElementById("mensajeEncriptar").value;
+                         var encriptado="";
+                        for(var i=0;i<algo.length;i++){
+                            
+                           if(algo[i].toLowerCase()=="a"){
+                                encriptado=encriptado.concat("ai");
+                           }else{
+                                if(algo[i].toLowerCase()=="e"){
+                                encriptado=encriptado.concat("enter");
+                                }else{
+                                    if(algo[i].toLowerCase()=="i"){
+                                    encriptado=encriptado.concat("imes");
+                                    }else{
+                                        if(algo[i].toLowerCase()=="o"){
+                                        encriptado=encriptado.concat("ober");
+                                        }else{
+                                        if(algo[i].toLowerCase()=="u"){
+                                        encriptado=encriptado.concat("ufat");
+                                            }else{
+                                                encriptado=encriptado.concat(algo[i].toLowerCase());
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            
+                        }
+                        document.getElementById("mensajeEncriptado").innerHTML=encriptado;
+                        
+                }
+                    
+                }
+                function presionado(){
+                    activo=true;
+                    if (activo) {
+                        algo=document.getElementById("mensajeEncriptar").value;
+                        algo=algo.replaceAll("ai", "a");
+                        algo=algo.replaceAll("enter", "e");
+                        algo=algo.replaceAll("imes", "i");
+                        algo=algo.replaceAll("ober", "o");
+                        algo=algo.replaceAll("ufat", "u");   
+                }
+                document.getElementById("mensajeEncriptado").innerHTML=algo;    
+                }           
+                
+                
+                
+            </script>
+        </main>
+        <footer>
+
+
+        </footer>
+    </body>
+</html>
