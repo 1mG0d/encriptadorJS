@@ -38,6 +38,13 @@ h1{
     
     font-size: 30px;
 }
+.estilo-tabla{
+    text-align: center;
+    
+}
+table{
+    margin: 0 auto;
+}
 tr{
   place-content: center;
   

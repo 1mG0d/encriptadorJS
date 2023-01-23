@@ -41,23 +41,18 @@
                         </tr>
                     </thead>
                     <tbody>
+
                         <tr>
-                            <td>
-                                <label class="encriptar" for="mensajeEncriptar">Ingrese Mensaje a Encriptar</label><br>
-                                <textarea  id="mensajeEncriptar" cols="70" rows="10" class="input-padron"></textarea required>
-                            </td>
-                            <td>
-                                <label class="encriptar" for="mensajeEncriptado">Mensaje Encriptado</label><br>
-                                <textarea  id="mensajeEncriptado" cols="70" rows="10" class="input-padron"></textarea required>
-                            </td>
+                            <td><label class="encriptar" for="mensajeEncriptar">Ingrese Mensaje a Encriptar</label><br></td>
+                            <td><label class="encriptar" for="mensajeEncriptado">Mensaje Encriptado</label><br></td>
                         </tr>
                         <tr>
-                            <td>
-                                <button  class="encriptar" onclick="presionado1()" >Encriptar Mensaje</button>
-                            </td>
-                            <td>
-                                <button class="encriptar" onclick="presionado()" >Desencriptar Mensaje</button>
-                            </td>
+                            <td><textarea  autofocus id="mensajeEncriptar" cols="70" rows="10" ></textarea required></td>
+                            <td><textarea  id="mensajeEncriptado" cols="70" rows="10" readonly></textarea></td>
+                        </tr>
+                        <tr>
+                            <td><button  class="encriptar" onclick="presionado1()" >Encriptar Mensaje</button></td>
+                            <td><button class="encriptar" onclick="presionado()" >Desencriptar Mensaje</button></td>
                         </tr>
                     </tbody>
                 </table>
