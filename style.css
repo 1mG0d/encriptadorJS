@@ -11,7 +11,7 @@ body{
     background-position: center;
 }
 main{
-    background: linear-gradient(#9a9feb,#0b0e35);
+    
 }
 nav li{
 	display: inline;
@@ -35,13 +35,34 @@ nav a:hover{
     transition: 1000ms;
 }   
 h1{
+    
     font-size: 30px;
 }
+tr{
+  place-content: center;
+  
+
+}
+td{
+    padding: 1em;
+}
+.titulo{
+    text-align: center;
+    padding: 0.5em;
+}
+
 .encriptar{
     font-size: 2em;
     font-style: italic;
     font-weight: bold;
+    
 
+}
+.agradecimiento{
+    padding: 0.5em;
+    color: rgb(0, 0, 0);
+    font-size: 1.5em;
+    text-align: center;
 }
 footer{
     padding: 2em;
