@@ -45,14 +45,21 @@ h1{
 table{
     margin: 0 auto;
 }
-tr{
-  place-content: center;
-  
-
-}
 td{
     padding: 1em;
 }
+tr{
+  place-content: center;
+}
+
+textarea {
+    resize: none;
+}
+
+.cambio{
+    width: 300px;
+}
+
 .titulo{
     text-align: center;
     padding: 0.5em;
