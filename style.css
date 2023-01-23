@@ -1,7 +1,58 @@
-.logo{
-    padding: 2em;
-    position: center;
-	width: 10%;
+header{
+    padding: 2em 0;
 	margin: 0 auto;
+    text-align: center;
+    position: relative;
+    background-color: #9a9feb;
+}
+body{
+    background-color: #0b0e35;
+    background-image: url(image/fondo1.gif);
+    background-position: center;
+}
+main{
+    background: linear-gradient(#9a9feb,#0b0e35);
+}
+nav li{
+	display: inline;
+	margin: 0 0 0 15px;
+
+}
+nav a{
+	text-transform: uppercase;
+	color: #000000;
+	font-weight: bold;
+	font-size: 20px;
+	text-decoration: none;
+
+}
+
+nav a:hover{
+	text-decoration: underline;
+	color: #b11c0b;
+    font-weight:bolder;
+    font-size: 25px;
+    transition: 1000ms;
+}   
+h1{
+    font-size: 30px;
+}
+.encriptar{
+    font-size: 2em;
+    font-style: italic;
+    font-weight: bold;
+
+}
+footer{
+    padding: 2em;
+	background: url(image/bg.png);
+    text-align: center;
+    color: white;
     
+    
+}
+
+.editor{
+
+    width: 30%;
 }

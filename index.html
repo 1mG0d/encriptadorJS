@@ -7,23 +7,54 @@
         </title>
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <header>
+        <script> 
+            function carga(){ 
+                   if (confirm("Esta página está genial (ya la puedes ver). Me das tu voto?")){ 
+                      window.open("https://github.com/1mG0d/encriptadorJS/stargazers","","") 
+                   } 
 
+            } 
+            </script>
+    </head>
+    <body onload="carga()">
+        <header>
+           
+           <div >
+            <h1>Programa para Encriptar / DESENCRIPTAR mensaje</h1>
+            <br>            
+            <nav>
+                <ul>
+                    <li>Idioma/Language/Idioma</li>
+                    <li><a href="index.html"> Español </a></li>
+                    <li><a href="ingles.html">English</a></li>
+                    <li><a href="portugues.html">português</a></li>
+                </ul>
+            </nav>
+        </div>
         </header>
         <main>
+            <table>
+                <thead>Por favor ingrese datos sin acentos.</thead>
+                <tbody>
+                    <td>algo</td>
+                </tbody>
+                <tfoot>
+                    <th>a<td>a</td></th>
+                <th>b<td>a</td></th>
+            </tfoot>
+            </table>
             <label for="mensajeEncriptar">Ingrese Mensaje a Encriptar</label>
             <textarea  id="mensajeEncriptar" cols="70" rows="10" class="input-padron"></textarea required>
                 <label for="mensajeEncriptado">Mensaje Encriptado</label>
             <textarea  id="mensajeEncriptado" cols="70" rows="10" class="input-padron"></textarea required>
-                <button  onclick="presionado1()" >Encriptar Mensaje</button>
-                <button  onclick="presionado()" >Desencriptar Mensaje</button>
+                <button  class="encriptar" onclick="presionado1()" >Encriptar Mensaje</button>
+                <button class="encriptar" onclick="presionado()" >Desencriptar Mensaje</button>
                 
             <script>
                 var activo= false;
                 var algo="";
                 mensajeEncriptado="entradaMensaje";
+                
                 function presionado1(){
                     activo=true;
                     if (activo) {
@@ -67,7 +98,8 @@
                         algo=algo.replaceAll("enter", "e");
                         algo=algo.replaceAll("imes", "i");
                         algo=algo.replaceAll("ober", "o");
-                        algo=algo.replaceAll("ufat", "u");   
+                        algo=algo.replaceAll("ufat", "u"); 
+                        
                 }
                 document.getElementById("mensajeEncriptado").innerHTML=algo;    
                 }           
@@ -78,8 +110,8 @@
         </main>
         <footer>
             <div >
-                <img class="logo" src="image/editor.jpg" alt="Logo del Editor" >
-                <p> Made By Luis Sandoval </p>
+                <img class="editor" src="image/editor.png" alt="Logo del Editor" >
+                <p> Made By &copy Luis Sandoval </p>
             </div>
                 
 
