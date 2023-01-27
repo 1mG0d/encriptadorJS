@@ -48,21 +48,22 @@
                                     <td><label class="encriptar" for="mensajeEncriptar">Ingrese Mensaje a Encriptar</label><br></td>
                                     <td><label class="encriptar" for="mensajeEncriptado">Mensaje Encriptado</label><br></td>
                                     <div >
-                                        <td><label id="cambio1" class="encriptar" for="mensajeEncriptado" >Escoja una opcion</label><br></td>
+                                        <td><label class="encriptar" for="mensajeEncriptado" >Escoja una opcion</label><br></td>
                                     </div >
                                     
                                 </tr>
                                 <tr>
                                     <td><textarea  autofocus id="mensajeEncriptar" cols="70" rows="15" ></textarea required></td>
                                     <td><textarea  id="mensajeEncriptado" cols="70" rows="15" readonly></textarea></td>
-                                    <div id="cambio">
-                                        <td><img src="image/inicio1.jpg" alt="Respuesta" class="cambio" ></td>
+                                    <div>
+                                        <td><img src="image/inicio1.jpg" alt="Respuesta" class="cambio" id="cambio1"></td>
                                     </div>
                                     
                                 </tr>
                                 <tr>
                                     <td><button  class="encriptar" onclick="presionado1()" >Encriptar Mensaje</button></td>
-                                    <td><button class="encriptar" onclick="presionado()" >Desencriptar Mensaje</button></td>  
+                                    <td><button class="encriptar" onclick="presionado()" >Desencriptar Mensaje</button></td> 
+                                    <TD><button class="encriptar" onclick="copiar()" hidden="true" id="copiador">Copiar Mensaje</button></TD> 
                                 </tr>
                             </td> 
                         </tr>
@@ -109,8 +110,12 @@
                             
                         }
                         document.getElementById("mensajeEncriptado").innerHTML=encriptado;
-                        algo=document.getElementById("cambio1").innerHTML.value;
-                        console.log(algo);
+                        var imagen = document.getElementById("cambio1");
+                        imagen.src="image/encriptado.jpg";
+                        var copiando = document.getElementById("copiador");
+                        copiando.hidden=false;
+
+                        
                         
                 }
                     
@@ -126,10 +131,20 @@
                         algo=algo.replaceAll("ufat", "u"); 
                         
                 }
-                document.getElementById("mensajeEncriptado").innerHTML=algo;    
+                document.getElementById("mensajeEncriptado").innerHTML=algo;
+                var imagen = document.getElementById("cambio1");
+                imagen.src="image/abierto.jpg";
+                var copiando = document.getElementById("copiador");
+                copiando.hidden=false;
+                
                 }           
                 
-                
+            function copiar(){
+                algo=document.getElementById("mensajeEncriptado").value;
+                navigator.clipboard.writeText(algo);
+                console.log(algo);
+                alert("Mensaje Copiado Exitosamente");
+            }    
                 
             </script>
         </main>
