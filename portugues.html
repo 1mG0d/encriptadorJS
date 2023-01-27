@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="style.css">
         <script> 
             function carga(){ 
-                   if (confirm("Esta página está genial (ya la puedes ver). Me das tu voto?")){ 
+                   if (confirm("Esta página é ótima (você pode vê-la agora). me dê seu voto")){ 
                       window.open("https://github.com/1mG0d/encriptadorJS/stargazers","","") 
                    } 
 
@@ -20,7 +20,7 @@
         <header>
            
            <div >
-            <h1>Programa para Encriptar / Desencriptar mensaje</h1>
+            <h1>Programa para criptografar/descriptografar mensagem</h1>
             <br>            
             <nav>
                 <ul>
@@ -37,7 +37,7 @@
                 <table>
                     <thead>
                         <tr>
-                            <h1 class="titulo">Por favor ingrese datos sin acentos.</h1>
+                            <h1 class="titulo">Insira os dados sem acentos.</h1>
                         </tr>
                     </thead>
                     <tbody>
@@ -45,10 +45,10 @@
                             
                             <td>
                                 <tr>
-                                    <td><label class="encriptar" for="mensajeEncriptar">Ingrese Mensaje a Encriptar</label><br></td>
-                                    <td><label class="encriptar" for="mensajeEncriptado">Mensaje Encriptado</label><br></td>
+                                    <td><label class="encriptar" for="mensajeEncriptar">Digite a mensagem para criptografar</label><br></td>
+                                    <td><label class="encriptar" for="mensajeEncriptado">mensagem criptografada</label><br></td>
                                     <div >
-                                        <td><label class="encriptar" for="mensajeEncriptado" >Escoja una opcion</label><br></td>
+                                        <td><label class="encriptar" for="mensajeEncriptado" >Escolha uma opção</label><br></td>
                                     </div >
                                     
                                 </tr>
@@ -61,9 +61,9 @@
                                     
                                 </tr>
                                 <tr>
-                                    <td><button  class="encriptar" onclick="presionado1()" >Encriptar Mensaje</button></td>
-                                    <td><button class="encriptar" onclick="presionado()" >Desencriptar Mensaje</button></td> 
-                                    <TD><button class="encriptar" onclick="copiar()" hidden="true" id="copiador">Copiar Mensaje</button></TD> 
+                                    <td><button  class="encriptar" onclick="presionado1()" >criptografar mensagem</button></td>
+                                    <td><button class="encriptar" onclick="presionado()" >Descriptografar mensagem</button></td> 
+                                    <TD><button class="encriptar" onclick="copiar()" hidden="true" id="copiador">copiar mensagem</button></TD> 
                                 </tr>
                             </td> 
                         </tr>
@@ -71,7 +71,7 @@
                 </table>
             </div>
             
-            <br><p class="agradecimiento">Gracias por usar este programa.</p>
+            <br><p class="agradecimiento">Obrigado por usar este programa.</p>
    
             <script>
                 var activo= false;
@@ -143,7 +143,7 @@
                 algo=document.getElementById("mensajeEncriptado").value;
                 navigator.clipboard.writeText(algo);
                 console.log(algo);
-                alert("Mensaje Copiado Exitosamente");
+                alert("Mensagem copiada com sucesso");
             }    
                 
             </script>
